@@ -28,7 +28,7 @@ namespace Achievements.Scripts.Concrete
         {
             var current = Stages.FirstOrDefault(x => x.state is State.Uncompleted or State.Finished);
 
-            return current;
+            return current ? current : Stages.Last();
         }
         
         public override void Stage()

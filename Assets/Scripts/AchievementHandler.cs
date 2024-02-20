@@ -11,7 +11,7 @@ namespace Achievements.Scripts
         private static AchievementHandler _instance;
 
         [SerializeField] private AchievementCollection _collection;
-        [SerializeField, SerializeReference] private AbstractAchievement[] _achievements;
+        [SerializeField, SerializeReference, HideInInspector] private AbstractAchievement[] _achievements;
         
         private void Awake()
         {
